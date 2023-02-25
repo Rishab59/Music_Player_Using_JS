@@ -21,6 +21,7 @@
         
         <!-- Some Styling properties & Icons taken from "https://cdnjs.com/libraries/font-awesome/4.7.0" -->
         <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel = "shortcut icon" type = "image/png" href = "../Images/letter-r.png">
         
         <style>
         
@@ -344,6 +345,16 @@
       
         <!--- Javascript Code Starts --->
         <script>
+
+            let docTitle = document.title ;
+            
+            window.addEventListener("blur", () => {
+                document.title = "Thanks For Visiting - Rishab" ;
+            }) ;
+
+            window.addEventListener("focus", () => {
+                document.title = docTitle ;
+            }) ;
 
             let previous = document.querySelector('#pre') ;
             let play = document.querySelector('#play') ;
